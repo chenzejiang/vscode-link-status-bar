@@ -1,0 +1,62 @@
+{
+  "name": "link-status-bar",
+  "displayName": "link-status-bar",
+  "description": "设置自己的github地址在StatusBar",
+  "version": "1.0.0",
+  "publisher": "link-status-bar",
+  "keywords": [
+    "github",
+    "link",
+    "config",
+    "StatusBar"
+  ],
+  "icon": "img/icon.png",
+  "activationEvents": [
+    "*"
+  ],
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "link-status-bar.name": {
+          "type": "string",
+          "default": "GitHub",
+          "description": "显示在StatusBar显示的名称"
+        },
+        "link-status-bar.link": {
+          "type": "string",
+          "default": "https://github.com/chenzejiang",
+          "description": "显示在StatusBar显示的名称链接"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "status-bar.open",
+        "title": "跳转到配置链接地址"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "eslint": "^4.11.0",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenzejiang/vscode-github-status-bar"
+  },
+  "__npminstall_done": false
+}
