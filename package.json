@@ -1,9 +1,9 @@
 {
   "name": "link-status-bar",
   "displayName": "link-status-bar",
-  "description": "设置自己的github地址在StatusBar",
-  "version": "1.0.0",
-  "publisher": "link-status-bar",
+  "description": "配置一个标签在 StatusBar 例如：github地址",
+  "version": "0.0.1",
+  "publisher": "webJ",
   "keywords": [
     "github",
     "link",

@@ -17,12 +17,6 @@ class App {
         this.statusBarItems = null;
         this.init();
     }
-    /*
-     * 更新底部 StatusBar
-     */
-    updateStatusBar() {
-        this.statusBarItems.text = '123';
-    }
     /**
      * 创建statusBar 
      * @param {string} text 
